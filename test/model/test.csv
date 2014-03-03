@@ -1,0 +1,38 @@
+Accounts
+ID, Password, Type, Fullname, Gender, Birth, Email, Phone, Address
+manager	,Manager1*	,Manager	,Manager Default	,true	,2012-12-21	,defaultmanager@themusicschool.edu.vn	,08 - 1111 - 1111	,
+
+Class Types
+Skill, Type, Lesson/Week, Fee/45mins, Fee/60mins, Note
+Piano	,0	,0	,12	,15	,
+
+Teachers
+ID, Fullname, Gender, Birth, Skills, Email, Phone, Address
+1305001	,Quang Tran	,true	,2001-05-09	,Piano-12	,quangtran@gmail.com	,08 - 1230 - 4567	,hcmc
+
+Students
+ID, Fullname, Gender, Birth, Email, Phone, Address, Contact Name,Contact Relationship, Contact Email, Contact Phone, Contact Address
+1305002	,Duc Tu	,true	,1998-05-09	,ductu@gmail.com	,08 - 1234 - 5678	,hcmc  	,tu dad	,null	,dad@gmail.com	,08 - 1234 - 5678	,hcmc
+
+Classes
+ID, Class Name, Start Date, End Date, Current Number Students, Tuition Fee, Textbook, Class Type
+Class1	,Piano	,2013-05-09	,2014-05-09	,1	,0	,text	,Piano-0
+
+Lessons
+Class ID, Room ID, Session ID, Session
+
+Teacher-Class
+Teacher Class ID, Teacher ID, Class ID
+Teacher Class 1	,1305001	,Class1
+
+Student-Class
+ID, Class ID, Student ID, Is Paid, Invoice
+Enrollment: 1	,Class1	,1305002	,false	,false
+
+Invoice
+ID, Student-Class, Paid Date, Paid Method, Paid Note, Total Free, Balance
+
+Pay Slips
+ID, Teacher ID, Date, Classes
+
+
